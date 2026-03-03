@@ -2,6 +2,7 @@
 import { startREPL } from "./repl.js";
 
 function main() {
+  console.log("Welcome to the Pokedex!");
   startREPL();
 }
 
