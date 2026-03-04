@@ -4,7 +4,7 @@ import { initState } from "./state.js";
 
 async function main() {
   console.log("Welcome to the Pokedex!");
-  const state = initState();
+  const state = initState(1000 * 60 * 5);
   await startREPL(state);
 }
 

@@ -16,7 +16,7 @@ export type State = {
   prevLocationURL: string | null;
 };
 
-export function initState() {
+export function initState(interval: number) {
   const rl = createInterface({
     input: process.stdin,
     output: process.stdout,
@@ -26,7 +26,7 @@ export function initState() {
   return {
     readline: rl,
     commands: getCommands(),
-    pokeAPI: new PokeAPI(60000),
+    pokeAPI: new PokeAPI(interval),
     nextLocationURL: "",
     prevLocationURL: null,
   };
