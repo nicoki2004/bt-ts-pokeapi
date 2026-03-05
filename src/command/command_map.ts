@@ -1,5 +1,5 @@
-import { ShallowLocations } from "./shallow_locations.js";
-import { State } from "./state";
+import { ShallowLocations } from "../types/shallow_locations.js";
+import { State } from "../internal/state.js";
 
 export async function commandMap(state: State) {
   try {

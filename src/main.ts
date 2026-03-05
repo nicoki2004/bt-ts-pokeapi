@@ -1,6 +1,6 @@
 // repl.js actually refers to repl.ts
-import { startREPL } from "./repl.js";
-import { initState } from "./state.js";
+import { startREPL } from "./internal/repl.js";
+import { initState } from "./internal/state.js";
 
 async function main() {
   console.log("Welcome to the Pokedex!");

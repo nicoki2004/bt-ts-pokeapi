@@ -1,6 +1,6 @@
 import { Cache } from "./pokecache.js";
-import { Pokemon } from "./pokemon.js";
-import { ShallowLocations, Location } from "./shallow_locations.js";
+import { Pokemon } from "../types/pokemon.js";
+import { ShallowLocations, Location } from "../types/shallow_locations.js";
 
 export class PokeAPI {
   private static readonly baseURL = "https://pokeapi.co/api/v2";

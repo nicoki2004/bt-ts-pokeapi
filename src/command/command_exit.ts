@@ -1,4 +1,4 @@
-import { State } from "./state";
+import { State } from "../internal/state";
 
 export async function commandExit(state: State) {
   state.readline.close();

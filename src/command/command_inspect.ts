@@ -1,5 +1,5 @@
-import type { State } from "./state.js";
-import { Pokemon } from "./pokemon.js";
+import type { State } from "../internal/state.js";
+import { Pokemon } from "../types/pokemon.js";
 
 export async function commandInspect(state: State, ...args: string[]) {
   if (args.length !== 1) {
@@ -29,22 +29,3 @@ export async function commandInspect(state: State, ...args: string[]) {
   });
   return;
 }
-
-// // Información básica
-// fmt.Printf("Name: %s\n", pokemon.Name)
-// fmt.Printf("Height: %d\n", pokemon.Height)
-// fmt.Printf("Weight: %d\n", pokemon.Weight)
-//
-// // Stats
-// fmt.Println("Stats:")
-// for _, stat := range pokemon.Stats {
-// 	fmt.Printf("  -%s: %d\n", stat.Stat.Name, stat.BaseStat)
-// }
-//
-// // Types
-// fmt.Println("Types:")
-// for _, typeInfo := range pokemon.Types {
-// 	fmt.Printf("  - %s\n", typeInfo.Type.Name)
-// }
-//
-// return nil
